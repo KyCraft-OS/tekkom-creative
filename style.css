@@ -28,8 +28,14 @@ body {
 
 /* Logo */
 .logo {
-    font-size: 22px;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    display: block;
 }
 
 /* Menu */
@@ -375,4 +381,87 @@ body {
 
 .contact-button:hover {
     background-color: #000000;
+}
+/* ==================== */
+/* Responsive Mobile */
+/* ==================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        height: auto;
+        min-height: 70px;
+        padding: 14px 5%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .nav-button {
+        padding: 9px 13px;
+        font-size: 12px;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+        padding-top: 2px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 70vh;
+        padding: 60px 6%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+        line-height: 1.1;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 12px 18px;
+        font-size: 14px;
+    }
+
+    .services,
+    .portfolio,
+    .about,
+    .contact {
+        padding: 80px 6%;
+    }
+
+    .section-header h2,
+    .portfolio h2,
+    .about h2,
+    .contact h2 {
+        font-size: 34px;
+    }
+
+    .service-cards,
+    .portfolio-grid,
+    .about-points {
+        grid-template-columns: 1fr;
+    }
+
 }
