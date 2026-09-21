@@ -6,7 +6,7 @@
     <title>Tekkom Creative</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<d>
      <nav class="navbar">
         <div class="logo">
             <img src="Logo_Tekom.jpeg" alt="Tekkom Creative">
@@ -109,10 +109,6 @@
                 </div>
 
                 <h3>Web Design Prototype</h3>
-                <p>
-                    <strong>Kategori:</strong> Web Design<br>
-                    <strong>Creator:</strong> Tekkom Creative
-                </p>
 
                 <p>
                     prototype design website dengan fokus pada tampilan visual dan struktur antarmuka pengguna.
@@ -127,13 +123,7 @@
                 <h3>RAILS-Railway Crossing Warning System</h3>
 
                 <p>
-                    <strong>Kategori:</strong> Microcontroller<br>
-                    <strong>Creator:</strong> Berka Aldizar
-                </p>
-
-                <p>
-                    Sistem peringatan perlintasan kereta api berbasis mikrokontroler
-                    untuk meningkatkan keselamatan pengguna jalan.
+                    Sistem peringatan dini dalam mendeteksi kereta api dan memberikan peringatan kepada pengguna jalan.
                 </p>
             </div>
 
@@ -232,7 +222,42 @@
 
     </div>
 </div>
+<div id="railsModal" class="portfolio-modal" onclick="closeRailsModal()">
+    <div class="portfolio-modal-content rails-modal-content" onclick="event.stopPropagation()">
 
+        <img src="rails-poster.png" alt="RAILS Railway Crossing Warning System">
+
+        <div class="rails-modal-info">
+
+            <h2>RAILS-Railway Crossing Warning System</h2>
+
+            <p><strong>Kategori:</strong> Microcontroller</p>
+            <p><strong>Creator:</strong> Berka Aldizar</p>
+
+            <p>
+                Sistem peringatan dini dalam mendeteksi kedatangan kereta
+                dan memberikan peringatan kepada pengguna jalan.
+            </p>
+
+            <h3>Teknologi & Perangkat</h3>
+
+            <p>
+                Raspberry Pi, ESP32, YOLOv8, LoRa,
+             sirene, dan lampu strobo.
+            </p>
+
+            <a
+                href="https://berstudio.id/projects/rails-real-time-ai-based-local-warning-system-for-railway-crossing"
+                class="contact-button"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Lihat Project
+            </a>
+
+        </div>
+    </div>
+</div>
 <script src="script.js"></script>
 
 </body>

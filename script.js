@@ -6,12 +6,27 @@ window.closePortfolio = function () {
     document.getElementById("portfolioModal").style.display = "none";
 };
 
-document.querySelector(".portfolio-card").addEventListener("click", openPortfolio);
+window.openRailsModal = function () {
+    document.getElementById("railsModal").style.display = "flex";
+};
 
-document.querySelector(".portfolio-modal-close").addEventListener("click", closePortfolio);
+window.closeRailsModal = function () {
+    document.getElementById("railsModal").style.display = "none";
+};
 
+
+// Web Design
+document.querySelectorAll(".portfolio-card")[0].addEventListener("click", openPortfolio);
+
+
+// RAILS / Microcontroller
+document.querySelectorAll(".portfolio-card")[1].addEventListener("click", openRailsModal);
+
+
+// Tutup modal dengan tombol Escape
 document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
         closePortfolio();
+        closeRailsModal();
     }
 });
